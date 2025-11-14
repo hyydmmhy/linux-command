@@ -166,8 +166,9 @@ docker pull wcjiang/linux-command
 docker run --name linux-command --rm -d -p 9665:3000 wcjiang/linux-command:latest
 # Or
 docker run --name linux-command -itd -p 9665:3000 wcjiang/linux-command:latest
+#设置容器开机自启
+docker run --name linux-command --restart=always -d -p 9665:3000 wcjiang/linux-command:latest
 ```
-
 在浏览器中访问以下 URL
 
 ```bash
